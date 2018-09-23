@@ -8,7 +8,7 @@ When starting your computer it presents you all your operating systems, and an i
 
 ### Usage
 
-Read the setup instructions for [linux](docs/install-linux.md), or [macOs](docs/install-macos.md).
+Read the setup instructions for [linux](docs/install-linux.md), [macOs](docs/install-macos.md), or [windows](docs/install-windows).
 
 ### Contribute
 
