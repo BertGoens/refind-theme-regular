@@ -4,9 +4,10 @@
 INKSCAPE=`which inkscape 2> /dev/null`
 OPTIPNG=`which optipng 2> /dev/null`
 
-OUT="bitmap"
-BIG_ICON_SRC_DIR="svg/big"
-SMALL_ICON_SRC_DIR="svg/small"
+# inkscape on macOs requires the full path to a file
+OUT="$PWD/bitmap"
+BIG_ICON_SRC_DIR="$PWD/svg/big"
+SMALL_ICON_SRC_DIR="$PWD/svg/small"
 REG_BIG_ICON_FILENAME='s/^svg\/big\///g;s/.svg$//g'
 REG_SMALL_ICON_FILENAME='s/^svg\/small\///g;s/.svg$//g'
 DPI=96
