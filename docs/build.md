@@ -31,6 +31,12 @@ After modification, we need to update the icons in the /icon directory. This tas
 - [optipng](http://optipng.sourceforge.net/)
 - [inkscape](https://inkscape.org)
 
+On macOs you need an additional step after installing inkscape:
+
+```sh
+sudo ln -s /Applications/Inkscape.app/Contents/Resources/bin/inkscape /usr/local/bin/inkscape
+```
+
 Now open a terminal and execute following commands:
 
 - Move into the correct directory

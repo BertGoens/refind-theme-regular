@@ -4,7 +4,7 @@ A simplistic clean and minimal theme for rEFInd, with presets for normal and HD 
 
 When starting your computer it presents you all your operating systems, and an icon detailing from where you will boot. Along with some tools including: a command prompt, reboot and shutdown options, and more.
 
-![screenshot][screenshot]
+![screenshot](docs/screenshot.jpg)
 
 ### Usage
 
@@ -27,7 +27,6 @@ The official [rEFInd website][refind-website].
 The background is [Minimalist Wallpaper][wallpaper] by
 [LeonardoAIanB][wallpaper-author].
 
-[screenshot]: /screenshot.jpg
 [refind-website]: https://www.rodsbooks.com/refind/
 [refind-theme-original]: https://github.com/munlik/refind-theme-regular
 [refind-theme-regular]: https://github.com/bobafetthotmail/refind-theme-regular
