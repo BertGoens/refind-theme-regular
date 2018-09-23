@@ -1,13 +1,16 @@
 # refind-theme-regular
 
-A simplistic clean and minimal theme for rEFInd, with presets for normal and HD monitors, like the macbook. It's a beautifull theme for super-users.   
-When starting your computer it presents you all your operating systems, and an icon detailing from where you will boot.
+A simplistic clean and minimal theme for rEFInd, with presets for normal and HD monitors, like the macbook. It's a beautifull theme for super-users.
+
+When starting your computer it presents you all your operating systems, and an icon detailing from where you will boot. Along with some tools including: a command prompt, reboot and shutdown options, and more.
 
 ![screenshot][screenshot]
 
 ### Usage
 
 Read the setup instructions for [linux](docs/install-linux.md), or [macOs](docs/install-macos.md).
+
+### Contribute
 
 If you want to modify the theme and make a contribution read [build](docs/build.md) documentation to help you get started.
 
