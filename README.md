@@ -1,22 +1,15 @@
-# Super rEFInd
+# refind-theme-regular
 
-A simplistic clean and minimal theme for rEFInd, ready to go for mac.
+A simplistic clean and minimal theme for rEFInd, with presets for normal and HD monitors, like the macbook. It's a beautifull theme for super-users.   
+When starting your computer it presents you all your operating systems, and an icon detailing from where you will boot.
 
 ![screenshot][screenshot]
 
 ### Usage
 
-1. Mount your EFI directory:
+Read the setup instructions for [linux](docs/install-linux.md), or [macOs](docs/install-macos.md).
 
-   - `sudo mkdir /Volumes/efi`
-   - `sudo mount -t msdos /dev/disk0s1 /Volumes/efi`
-   - `open /Volumes/efi/`
-
-2. Locate refind and create a folder called `themes` inside it.
-
-3. Clone this repository into the `themes` directory.
-
-4. To enable the theme add `include themes/super-refind/theme.conf` at the end of `refind/refind.conf`.
+If you want to modify the theme and make a contribution read [build](docs/build.md) documentation to help you get started.
 
 **More information**
 
@@ -24,6 +17,7 @@ The official [rEFInd website][refind-website].
 
 ### Attribution
 
+- Roderick W. Smith, developer of rEFInd
 - [munlik][refind-theme-original], the initial creator.
 - [bobafetthotmail][refind-theme-regular], continuing the work of munlik
 

@@ -17,13 +17,16 @@ Now others will be able to benefit from your changes, and can credit you for you
 
 ## Fonts
 
+All refind-compatible fonts must be monospaced, and transformed to a png file.
+Use the [mk_font.sh](/src/mk_font.sh) script to generate a new font of your liking.
+
 ### Icons
 
 The icons in their original size are all found in the /src/svg directory.
 
-If you want to modify them I suggest you use an application that supports .svg files.
+If you want to modify them I suggest you use an application that supports editing .svg files.
 
-After modification, we now need to update the icons in the /icon direcotory. This task can be automated with the following tools:
+After modification, we need to update the icons in the /icon directory. This task can be automated with the following tools:
 
 - [optipng](http://optipng.sourceforge.net/)
 - [inkscape](https://inkscape.org)
