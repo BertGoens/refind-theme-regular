@@ -4,7 +4,7 @@
 
    - `sudo mkdir /Volumes/efi`
    - `sudo mount -t msdos /dev/disk0s1 /Volumes/efi`
-   - `open /Volumes/efi/`
+   - `open /Volumes/efi/EFI`
 
 2. Locate refind and create a folder called `themes` inside it.
 
