@@ -16,16 +16,18 @@ SCALE=1
 SRC_DIR=""
 OUT_DIR=""
 REG=''
+FILE_ALREADY_EXISTS_COUNTER=0
 
 function render_bitmap(){
+    FILE_ALREADY_EXISTS_COUNTER=0
     for svgfile in $(ls $SRC_DIR | grep .svg)
         do
             filename=$(echo $svgfile | sed $REG)
             if [ -f "$OUT_DIR/$filename.png" ]
                 then
-                    echo "'$OUT_DIR/$filename.png' already exists"
+                    let FILE_ALREADY_EXISTS_COUNTER++
                 else
-                    echo "Creating... $OUT_DIR/$filename.png"
+                    echo "Creating $OUT_DIR/$filename.png"
                 	$INKSCAPE --export-area-page \
                               --export-dpi=$(($SCALE*$DPI)) \
                               --export-png="$OUT_DIR/$filename.png" $SRC_DIR/$svgfile> /dev/null \
@@ -42,8 +44,7 @@ function render_bitmap(){
             then
                 for f in os_clover os_gummiboot os_hwtest os_refit os_network os_systemd-boot
                     do
-                        echo "Copying... $OUT_DIR/$f.png"
-                        cp -f "$OUT_DIR/os_unknown.png" "$OUT_DIR/$f.png"
+                        cp --force --verbose "$OUT_DIR/os_unknown.png" "$OUT_DIR/$f.png"
                 done
      	fi
 
@@ -51,8 +52,7 @@ function render_bitmap(){
             then
                 for f in tool_apple_rescue tool_windows_rescue
                     do
-                        echo "Copying... $OUT_DIR/$f.png"
-                        cp -f "$OUT_DIR/tool_rescue.png" "$OUT_DIR/$f.png"
+                        cp --force --verbose "$OUT_DIR/tool_rescue.png" "$OUT_DIR/$f.png"
                 done
 
         fi
@@ -72,6 +72,7 @@ function render_small_icon(){
     OUT_DIR="$OUT/small_$(($i*48))"
     mkdir -p $OUT_DIR
     render_bitmap
+    echo echo "$FILE_ALREADY_EXISTS_COUNTER files in scale preset $i already exist."
 }
 
 for i in ${SCALE_PRESET[@]}

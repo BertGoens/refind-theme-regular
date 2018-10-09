@@ -11,8 +11,8 @@ for i in $icons_folders ; do
     big_size="$(echo $i | awk -F"-" '{print $1}')"
     small_size="$(echo $i | awk -F"-" '{print $2}')"
 
-    # cp options -u, or --update is not supported on macos
-    cp -av "./src/bitmap/big_$big_size/." "./icons/$i"
-    cp -av "./src/bitmap/small_$small_size/." "./icons/$i"
+    # copy only when the source file is newer then the destination file
+    cp -a --update --verbose "./src/bitmap/big_$big_size/." "./icons/$i"
+    cp -a --update --verbose "./src/bitmap/small_$small_size/." "./icons/$i"
 
 done
