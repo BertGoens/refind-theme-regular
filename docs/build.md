@@ -31,11 +31,9 @@ After modification, we need to update the icons in the /icon directory. This tas
 - [optipng](http://optipng.sourceforge.net/)
 - [inkscape](https://inkscape.org)
 
-On macOs you need an additional step after installing inkscape:
+Make sure to follow the distro-specific documents to finish the build steps for your platform: [linux](./build-linux.md), [macOs](./build-macos.md), or [windows](./build-windows).
 
-```sh
-sudo ln -s /Applications/Inkscape.app/Contents/Resources/bin/inkscape /usr/local/bin/inkscape
-```
+### Commands
 
 Now open a terminal and execute following commands:
 
