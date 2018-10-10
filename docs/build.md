@@ -20,6 +20,9 @@ Now others will be able to benefit from your changes, and can credit you for you
 All refind-compatible fonts must be monospaced, and transformed to a png file.
 Use the [mk_font.sh](/src/mk_font.sh) script to generate a new font of your liking.
 
+Some fonts can be already found on your system, to add the others found in mk_font,
+navigate to the Github [codeface-repository] to download and install them;
+
 ### Icons
 
 The icons in their original size are all found in the /src/svg directory.
@@ -39,7 +42,11 @@ Now open a terminal and execute following commands:
 
 - Move into the correct directory
 - - `cd ./src`
-- Generate the png files in various sizes
-- - `./render_bitmap.sh`
-- Examine your changes, then if you are satisfied copy the new png icons into the appropriate subfolders
-- - `./copy-bitmap.sh`
+- Create the new icons, and copy them into the correct folder
+- - `./mk_icon`
+- Create the new font-images, and copy them into the correct folder
+- - `./mk_font`
+
+You are now ready to expirement with your changes, and file a pull request to share them with everybody.
+
+- [codeface-repository]: https://github.com/chrissimpkins/codeface
