@@ -25,7 +25,15 @@ navigate to the Github [codeface-repository] to download and install them;
 
 ### Icons
 
-The icons in their original size are all found in the /src/svg directory.
+The icons are in the svg format and their original size cqn be found in the `/src/svg` directory and have the following properties:
+
+- The icon canvas is aways square
+- OS icons
+- - The width and height should be 128 px
+- - The actual icon in the svg file should roughly fit in a square with a side of 96 px
+- Tool icons
+- - The width and height should be 48 px for tool icons
+- - The actual icon in the svg file should roughly fit in a square with a side of 20 px
 
 If you want to modify them I suggest you use an application that supports editing .svg files.
 

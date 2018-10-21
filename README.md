@@ -23,6 +23,7 @@ The official [rEFInd website][refind-website].
 - Roderick W. Smith, developer of rEFInd
 - [munlik][refind-theme-original], the initial creator.
 - [bobafetthotmail][refind-theme-regular], continuing the work of munlik
+- [bertgoens][bertgoens-github] updating the visuals, extending the documentation
 
 The background is [Minimalist Wallpaper][wallpaper] by
 [LeonardoAIanB][wallpaper-author].
@@ -32,3 +33,4 @@ The background is [Minimalist Wallpaper][wallpaper] by
 [refind-theme-regular]: https://github.com/bobafetthotmail/refind-theme-regular
 [wallpaper]: https://leonardoalanb.deviantart.com/art/Minimalist-wallpaper-295519786
 [wallpaper-author]: https://leonardoalanb.deviantart.com/
+[bertgoens-github]: https://github.com/BertGoens
